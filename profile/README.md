@@ -4,7 +4,7 @@ HanChar is a mobile application that is designed to recognize Japanese Kanji bas
 
 HanChar uses machine learning to recognize images and return the best 8 possible results to the user, where a selected result displays some information such as meaning, pronunciations, stroke order and example words (with audio).
 
-This is the integrative project Team 3 of Tecnologico de Monterrey, required for graduation in Computer Science. 
+This is the integrative project Team 3 of Tecnologico de Monterrey, required as academic research for graduation in Computer Science. 
 
 Each repository has its own installation instructions (currently only available in Spanish).
 
@@ -34,4 +34,9 @@ A PHP Laravel application providing HTTP endpoints for the front end app to comm
 
 ## ML Model
 
-A machine learning model 
+A Convulsional Neural Network (CNN) machine learning model for visual analysis. Trained with kanji images from writers, returning the top 8 results for a scope of ~1000 characters.
+- Training data was obtained from [**ETL-8G Character Database**](http://etlcdb.db.aist.go.jp/). Electrotechnical Laboratory, Japanese Technical Committee for Optical Character Recognition, ETL Character Database, 1973-1984.
+- The model was built using [Tensorflow Keras 2.4](https://www.tensorflow.org/versions/r2.4/api_docs/python/tf) for Python, using [Flask](https://flask.palletsprojects.com/en/2.2.x/) for communication with the backend.
+- The preprocessing, data visualization and model training is explained in a [Jupyter](https://jupyter-notebook.readthedocs.io/en/latest/) notebook in the repository.
+
+> ℹ️ The .h5 models are ignored in the repository. If interested in .h5 files, please contact [@feriosch](https://github.com/feriosch).
